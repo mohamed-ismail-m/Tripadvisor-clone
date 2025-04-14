@@ -56,6 +56,9 @@ body{
 
     
 }
+.navbar__s4{
+    display: none;
+}
 .categories__s1{
     font-size: 56px;
     font-weight: bolder;
@@ -65,9 +68,57 @@ body{
     padding-top: 40px;
     
 }
+@media screen and (max-width:600px) {
+    .navbar__s4{
+        display: block;
+        padding-right: 10px;
+    }
+    .logo{
+        width: 8rem;
+        padding-left: 50px;    
+
+    }
+    .navbar__s2, .navbar__s3{
+        display: none;
+
+
+        
+    }
+    .categories__s1{
+        font-size: 24px;
+    }
+    .categories__s2 p{
+        font-size: 14px;
+    }
+    .search-bar{
+        height: fit-content;
+        width: 60%;
+        justify-content: space-between;
+    }
+    .mainimage img{
+        height: 50%;
+        /* padding-top: 10px */
+
+    }
+    .recomended__container{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .popular__container{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .footer-image{
+        width: 50%;
+
+    }
+    
+
+}
 
 .categories__s2{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     padding-top: 40px;
@@ -85,6 +136,13 @@ body{
 .categories__s2 p:hover{
     border-bottom: solid black 2px;}
 
+
+    .main-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 .search-bar{
     padding: 10px;
     border: solid black 1px;
@@ -93,7 +151,7 @@ body{
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin-left: 270px;
+    /* margin-left: 270px; */
     margin-top: 20px;
     align-items: center;
     position:sticky;
@@ -110,33 +168,52 @@ body{
     padding: 10px;
 }
 .mainimage{
-    height: 650px;
+    /* height: 650px; */
 }
 .mainimage{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    /* height: 650px; */
+    /* overflow: hidden; */
+}
+
+.mainimage img{
+    width: 80%;
     padding-top: 60px;
+    /* height: 100%; */
 }
 .recomended{
-    margin-left: 100px;
+    
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
+    padding: 10px;
 }
 .recomended__desc{
     margin-top: 10px;
 }
 .recomended__container{
+    width: 100%;
+    overflow-x: auto;
     display: flex;
     gap: 50px;
     margin-top: 20px;
 }
 .popular{
-    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
+    padding: 10px;
 }
+
 .popular__desc{
     margin-top: 10px;
 }
 .popular__container{
+    width: 100%;
+    overflow-x: auto;
     display: flex;
     gap: 50px;
     margin-top: 20px;
@@ -163,7 +240,8 @@ body{
 .footer-image{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    padding: 10px;
+    overflow: hidden;
 }
 .footer-image__offer{
     width: 35%;
@@ -178,6 +256,7 @@ body{
     padding: 20px;
     background-color: #08e5ec;
     color: black;
+    
 
     
 }
@@ -196,12 +275,3 @@ body{
     display: flex;
     
 }
-
-
-
-
-
-
-
-
-
